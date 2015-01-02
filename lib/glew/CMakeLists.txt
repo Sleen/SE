@@ -1,0 +1,5 @@
+project(glew)
+add_definitions("-DGLEW_STATIC")
+include_directories(include)
+add_library(glew src/glew.c)
+set(LIBRARY_OUTPUT_PATH ${glew_SOURCE_DIR}/bin)

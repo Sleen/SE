@@ -1,0 +1,6 @@
+{
+    "value" : "rotate",
+    "to" : 360,
+    "repeat" : "forever",
+    "duration" : "1s"
+}

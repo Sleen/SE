@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/modecircle_pressed"
+    },
+    {
+        "drawable" : "@drawable/modecircle_normal"
+    }
+    ]
+}

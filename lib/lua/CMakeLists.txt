@@ -1,0 +1,5 @@
+project(lua)
+include_directories(include)
+aux_source_directory(src SRC)
+add_library(lua ${SRC})
+set(LIBRARY_OUTPUT_PATH ${lua_SOURCE_DIR}/bin)

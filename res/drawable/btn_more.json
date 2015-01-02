@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/btn_more_pressed"
+    },
+    {
+        "drawable" : "@drawable/btn_more_normal"
+    }
+    ]
+}

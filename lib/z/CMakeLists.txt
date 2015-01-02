@@ -1,0 +1,5 @@
+project(z)
+include_directories(include)
+aux_source_directory(src SRC)
+add_library(z ${SRC})
+set(LIBRARY_OUTPUT_PATH ${z_SOURCE_DIR}/bin)

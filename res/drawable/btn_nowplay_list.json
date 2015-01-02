@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/nowplaycurlist_pressed"
+    },
+    {
+        "drawable" : "@drawable/nowplaycurlist_normal"
+    }
+    ]
+}

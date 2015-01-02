@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/modesingle_pressed"
+    },
+    {
+        "drawable" : "@drawable/modesingle_normal"
+    }
+    ]
+}

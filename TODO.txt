@@ -1,0 +1,17 @@
+==============  BUGS  ==============
+
+[Android] can't exit app by pressing back key                           ¡Ì
+[Android] screen blurred while app bring to front or send to back       ¡Ì
+[Android] drawing objects with wrong depth                              ¡Ì
+
+
+============  OPTIMIZE  ============
+
+[All] batched opengl draw call
+[All] mbstowcs costs large time
+
+
+============  FEATURES  ============
+
+[All] embedded scripting language (maybe lua)
+[All] use layout files to describe the gui

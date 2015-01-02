@@ -1,0 +1,11 @@
+{
+    "shape" : "rect",
+    "solidColor" : "#5fff",
+    "radius" : "2dp",
+    "padding" : {
+        "left" : "8dp",
+        "top" : "8dp",
+        "right" : "8dp",
+        "bottom" : "8dp"
+    }
+}

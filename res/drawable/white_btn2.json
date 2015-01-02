@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/white_rect2_pressed"
+    },
+    {
+        "drawable" : "@drawable/white_rect2"
+    }
+    ]
+}

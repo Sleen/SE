@@ -1,0 +1,551 @@
+{
+    "class" : "FrameLayout",
+    "id" : "layout",
+    "views" : [
+    {
+        "class" : "LinearLayout",
+        "background" : "@drawable/bk",
+        "views" : [
+        {
+            "class" : "LinearLayout",
+            "id" : "tab",
+            "orientation" : "horizontal",
+            "paddingLeft" : "10dp",
+            "background" : "#dfff",
+            "layout_width" : "wrap_content",
+            "layout_height" : "wrap_content",
+            "views" : [
+            {
+                "class" : "MyView",
+                "id" : "mine",
+                "text" : "我的",
+                "fontSize" : "16dp",
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1,
+                "checked" : true
+            },
+            {
+                "class" : "MyView",
+                "id" : "recommand",
+                "text" : "推荐",
+                "fontSize" : "16dp",
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "MyView",
+                "id" : "storage",
+                "text" : "曲库",
+                "fontSize" : "16dp",
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "MyView",
+                "id" : "search",
+                "text" : "搜索",
+                "fontSize" : "16dp",
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ImageView",
+                "id" : "more",
+                "marginLeft" : "6dp",
+                "marginTop" : "10dp",
+                "marginRight" : "14dp",
+                "marginBottom" : "10dp",
+                "padding" : "4dp",
+                "drawable" : "@drawable/btn_more",
+                "layout_width" : "32dp",
+                "layout_height" : "32dp"
+            }
+            ]
+        },
+        {
+            "class" : "ScrollView",
+            "scrollBarVisibility" : "scrollbar_none",
+            "layout_width" : "match_parent",
+            "layout_height" : "match_parent",
+            "layout_weight" : 1,
+            "views" : [
+            {
+                "class" : "LinearLayout",
+                "id" : "content_layout",
+                "paddingLeft" : "10dp",
+                "paddingRight" : "10dp",
+                "layout_width" : "match_parent",
+                "views" : [
+                {
+                    "class" : "LinearLayout",
+                    "id" : "login_layout",
+                    "marginTop" : "6dp",
+                    "orientation" : "horizontal",
+                    "background" : "@drawable/white_btn",
+                    "views" : [
+                    {
+                        "class" : "ImageView",
+                        "drawable" : "@drawable/user_default",
+                        "layout_width" : "30dp",
+                        "layout_height" : "30dp",
+                        "layout_gravity" : "center"
+                    },
+                    {
+                        "class" : "View",
+                        "layout_width" : "match_parent",
+                        "layout_height" : "match_parent",
+                        "layout_weight" : 1
+                    },
+                    {
+                        "class" : "Label",
+                        "text" : "登录/注册",
+                        "color" : "#fff",
+                        "background" : "@drawable/blue_rect",
+                        "layout_width" : "wrap_content",
+                        "layout_height" : "wrap_content",
+                        "layout_gravity" : "center"
+                    }
+                    ]
+                },
+                {
+                    "class" : "LinearLayout",
+                    "id" : "local",
+                    "marginTop" : "6dp",
+                    "orientation" : "horizontal",
+                    "background" : "@drawable/white_btn",
+                    "layout_width" : "match_parent",
+                    "layout_height" : "wrap_content",
+                    "views" : [
+                    {
+                        "class" : "ImageView",
+                        "drawable" : "@drawable/ic_root_local",
+                        "margin" : {
+                            "left" : "8dp",
+                            "top" : "8dp",
+                            "right" : "16dp",
+                            "bottom" : "8dp"
+                        },
+                        "layout_width" : "32dp",
+                        "layout_height" : "32dp",
+                        "layout_gravity" : "center"
+                    },
+                    {
+                        "class" : "LinearLayout",
+                        "layout_gravity" : "center",
+                        "views" : [
+                        {
+                            "class" : "Label",
+                            "text" : "本地歌曲",
+                            "font" : {
+                                "size" : "14dp"
+                            },
+                            "color" : "#000"
+                        },
+                        {
+                            "class" : "Label",
+                            "text" : "192首歌曲",
+                            "paddingTop" : "8dp"
+                        }
+                        ]
+                    }
+                    ]
+                },
+                {
+                    "class" : "LinearLayout",
+                    "id" : "local",
+                    "marginTop" : "1dp",
+                    "orientation" : "horizontal",
+                    "background" : "@drawable/white_btn",
+                    "layout_width" : "match_parent",
+                    "layout_height" : "wrap_content",
+                    "views" : [
+                    {
+                        "class" : "ImageView",
+                        "drawable" : "@drawable/ic_root_download",
+                        "margin" : {
+                            "left" : "8dp",
+                            "top" : "8dp",
+                            "right" : "16dp",
+                            "bottom" : "8dp"
+                        },
+                        "layout_width" : "32dp",
+                        "layout_height" : "32dp",
+                        "layout_gravity" : "center"
+                    },
+                    {
+                        "class" : "LinearLayout",
+                        "layout_gravity" : "center",
+                        "views" : [
+                        {
+                            "class" : "Label",
+                            "text" : "我的下载",
+                            "font" : {
+                                "size" : "14dp"
+                            },
+                            "color" : "#000"
+                        },
+                        {
+                            "class" : "Label",
+                            "text" : "191首歌曲",
+                            "paddingTop" : "8dp"
+                        }
+                        ]
+                    }
+                    ]
+                },
+                {
+                    "class" : "LinearLayout",
+                    "id" : "local",
+                    "marginTop" : "6dp",
+                    "orientation" : "horizontal",
+                    "background" : "@drawable/white_btn",
+                    "layout_width" : "match_parent",
+                    "layout_height" : "wrap_content",
+                    "views" : [
+                    {
+                        "class" : "ImageView",
+                        "drawable" : "@drawable/ic_root_default",
+                        "margin" : {
+                            "left" : "8dp",
+                            "top" : "8dp",
+                            "right" : "16dp",
+                            "bottom" : "8dp"
+                        },
+                        "layout_width" : "32dp",
+                        "layout_height" : "32dp",
+                        "layout_gravity" : "center"
+                    },
+                    {
+                        "class" : "LinearLayout",
+                        "layout_gravity" : "center",
+                        "views" : [
+                        {
+                            "class" : "Label",
+                            "text" : "默认列表",
+                            "font" : {
+                                "size" : "14dp"
+                            },
+                            "color" : "#000"
+                        },
+                        {
+                            "class" : "Label",
+                            "text" : "11首歌曲",
+                            "paddingTop" : "8dp"
+                        }
+                        ]
+                    }
+                    ]
+                },
+                {
+                    "class" : "LinearLayout",
+                    "id" : "local",
+                    "marginTop" : "1dp",
+                    "orientation" : "horizontal",
+                    "background" : "@drawable/white_btn",
+                    "layout_width" : "match_parent",
+                    "layout_height" : "wrap_content",
+                    "views" : [
+                    {
+                        "class" : "ImageView",
+                        "drawable" : "@drawable/ic_root_recentplay",
+                        "margin" : {
+                            "left" : "8dp",
+                            "top" : "8dp",
+                            "right" : "16dp",
+                            "bottom" : "8dp"
+                        },
+                        "layout_width" : "32dp",
+                        "layout_height" : "32dp",
+                        "layout_gravity" : "center"
+                    },
+                    {
+                        "class" : "LinearLayout",
+                        "layout_gravity" : "center",
+                        "views" : [
+                        {
+                            "class" : "Label",
+                            "text" : "最近播放",
+                            "font" : {
+                                "size" : "14dp"
+                            },
+                            "color" : "#000"
+                        },
+                        {
+                            "class" : "Label",
+                            "text" : "100首歌曲",
+                            "paddingTop" : "8dp"
+                        }
+                        ]
+                    }
+                    ]
+                },
+                {
+                    "class" : "FrameLayout",
+                    "id" : "create_list",
+                    "margin" : {
+                        "left" : "40dp",
+                        "top" : "12dp",
+                        "right" : "40dp",
+                        "bottom" : "12dp"
+                    },
+                    "background" : "@drawable/white_btn2",
+                    "layout_width" : "match_parent",
+                    "views" : [
+                    {
+                        "class" : "LinearLayout",
+                        "orientation" : "horizontal",
+                        "layout_gravity" : "center",
+                        "views" : [
+                        {
+                            "id" : "add_icon",
+                            "class" : "ImageView",
+                            "drawable" : "@drawable/menu_icon_addto_normal",
+                            "layout_width" : "32dp",
+                            "layout_height" : "32dp",
+                            "layout_gravity" : "center"
+                        },
+                        {
+                            "class" : "Label",
+                            "text" : "创建播放列表",
+                            "font" : {
+                                "size" : "14dp"
+                            },
+                            "color" : "#000",
+                            "marginLeft" : "10dp",
+                            "layout_gravity" : "center"
+                        }
+                        ]
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        },
+        {
+            "class" : "LinearLayout",
+            "id" : "bottom",
+            "background" : {
+                "select" : [
+                {
+                    "mouseDown" : true,
+                    "drawable" : {
+                        "shape" : "rect",
+                        "solidColor" : "#5fff",
+                        "padding" : {
+                            "left" : "10dp",
+                            "top" : "5dp",
+                            "right" : "10dp",
+                            "bottom" : "5dp"
+                        }
+                    }
+                },
+                {
+                    "drawable" : {
+                        "shape" : "rect",
+                        "solidColor" : "#bfff",
+                        "padding" : {
+                            "left" : "10dp",
+                            "top" : "5dp",
+                            "right" : "10dp",
+                            "bottom" : "5dp"
+                        }
+                    }
+                }]
+            },
+            "orientation" : "horizontal",
+            "layout_width" : "match_parent",
+            "layout_height" : "wrap_content",
+            "views" : [
+            {
+                "class" : "ImageView",
+                "drawable" : "@drawable/quku_default_60",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "LinearLayout",
+                "marginLeft" : "10dp",
+                "layout_width" : "match_parent",
+                "layout_weight" : "1",
+                "layout_gravity" : "center",
+                "views" : [
+                {            
+                    "class" : "Label",
+                    "text" : "屋顶",
+                    "flags" : "no_wrap",
+                    "font" : {
+                        "size" : "13dp"
+                    },
+                    "color" : "#000"
+                },
+                {
+                    "class" : "Label",
+                    "text" : "周杰伦&温岚",
+                    "flags" : "no_wrap",
+                    "marginTop" : "8dp"
+                }
+                ]
+            },
+            {
+                "id" : "btn_play",
+                "class" : "ImageView",
+                "drawable" : "@drawable/btn_play",
+                "marginLeft" : "10dp",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "id" : "btn_next",
+                "class" : "ImageView",
+                "drawable" : "@drawable/btn_next",
+                "padding" : "4dp",
+                "marginLeft" : "20dp",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "id" : "btn_list",
+                "class" : "ImageView",
+                "drawable" : "@drawable/btn_list",
+                "padding" : "4dp",
+                "marginLeft" : "20dp",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            }
+            ]
+        }
+        ]
+    },
+    {
+        "visibled" : false,
+        "class" : "LinearLayout",
+        "marginTop" : "50dp",
+        "marginBottom" : "50dp",
+        "dividerDrawable" : "@drawable/divider",
+        "layout_width" : "match_parent",
+        "layout_height" : "match_parent",
+        "views" : [
+            {
+                "class" : "ModelViewer",
+                "id" : "model1",
+                "background" : {
+                    "shape" : "rect",
+                    "solidColor" : "#7000",
+                    "radius" : "4dp",
+                    "padding" : "5dp"
+                },
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ModelViewer",
+                "id" : "model2",
+                "background" : {
+                    "shape" : "rect",
+                    "solidColor" : "#7000",
+                    "radius" : "4dp",
+                    "padding" : "5dp"
+                },
+                "layout_width" : "match_parent",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            }
+        ]
+    },
+    {
+        "class" : "LinearLayout",
+        "id" : "list_layout",
+        "visibled" : false,
+        "layout_width" : "match_parent",
+        "layout_height" : "match_parent",
+        "views" : [
+        {
+            "class" : "View",
+            "layout_width" : "match_parent",
+            "layout_height" : "match_parent",
+            "layout_weight" : 0.42
+        },
+        {
+            "class" : "LinearLayout",
+            "id" : "list",
+            "background" : "@drawable/list_back",
+            "paddingLeft" : "3dp",
+            "paddingRight" : "3dp",
+            "layout_width" : "match_parent",
+            "layout_weight" : 0.45,
+            "views" : [
+            {
+                "class" : "LinearLayout",
+                "orientation" : "horizontal",
+                "layout_width" : "match_parent",
+                "views" : [
+                {
+                    "class" : "Label",
+                    "text" : "本地歌曲",
+                    "color" : "#fff",
+                    "font" : { "size" : "14dp" },
+                    "layout_gravity" : "center"
+                },
+                {
+                    "class" : "View",
+                    "layout_width" : "match_parent",
+                    "layout_height" : "match_parent",
+                    "layout_weight" : 1
+                },
+                {
+                    "class" : "ImageView",
+                    "id" : "list_mode",
+                    "drawable" : "@drawable/btn_mode_circle",
+                    "layout_width" : "28dp",
+                    "layout_height" : "28dp",
+                    "layout_gravity" : "center"
+                }
+                ]
+            },
+            {
+                "class" : "View",
+                "background" : "#99e",
+                "marginTop" : "5dp",
+                "layout_width" : "match_parent",
+                "layout_height" : "1dp"
+            },
+            {
+                "class" : "ScrollView",
+                "layout_width" : "match_parent",
+                "scrollBarStyle" : "outside_overlay",
+                "verScrollThumb" : {"shape" : "rect", "radius" : "3px", "solidColor" : "#6fff", "alpha" : 0},
+                "verScrollTrack" : {"shape" : "rect", "radius" : "3px", "solidColor" : "#3fff", "alpha" : 0},
+                "layout_weight" : 1,
+                "views" : [
+                {
+                    "class" : "Label",
+                    "text" : "小星星-汪苏泷\n\n心墙-林俊杰\n\n心雨-周杰伦\n\n心中的日月-王力宏\n\n星晴-周杰伦\n\n星座书上-许嵩\n\n心墙-林俊杰\n\n心雨-周杰伦\n\n心中的日月-王力宏\n\n星晴-周杰伦\n\n星座书上-许嵩",
+                    "color" : "#eee",
+                    "flags" : "left",
+                    "marginTop" : "8dp",
+                    "marginBottom" : "8dp"
+                }
+                ]
+            }
+            ]
+        },
+        {
+            "class" : "View",
+            "layout_width" : "match_parent",
+            "layout_height" : "match_parent",
+            "layout_weight" : 0.13
+        }
+        ]
+    }
+    ]
+}

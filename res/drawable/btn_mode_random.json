@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/moderandom_pressed"
+    },
+    {
+        "drawable" : "@drawable/moderandom_normal"
+    }
+    ]
+}

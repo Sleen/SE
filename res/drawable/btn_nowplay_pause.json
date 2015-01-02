@@ -1,0 +1,11 @@
+{
+    "select" : [
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/nowplaypause_pressed"
+    },
+    {
+        "drawable" : "@drawable/nowplaypause_normal"
+    }
+    ]
+}

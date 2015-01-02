@@ -1,0 +1,148 @@
+{
+    "class" : "FrameLayout",
+    "id" : "nowplay",
+    "background" : "@drawable/bk",
+    "views" : [
+    {
+        "class" : "LinearLayout",
+        "background" : "#5000",
+        "padding" : {
+            "left" : "5dp",
+            "top" : "10dp",
+            "right" : "5dp",
+            "bottom" : "10dp"
+        },
+        "layout_width" : "match_parent",
+        "layout_height" : "match_parent",
+        "views" : [
+        {
+            "class" : "LinearLayout",
+            "id" : "top",
+            "orientation" : "horizontal",
+            "views" : [
+            {
+                "class" : "ImageView",
+                "id" : "mode",
+                "drawable" : "@drawable/btn_mode_circle",
+                "layout_width" : "32dp",
+                "layout_height" : "32dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "Label",
+                "id" : "title",
+                "text" : "屋顶",
+                "font" : {
+                    "size" : "15dp"
+                },
+                "color" : "#fff",
+                "layout_weight" : 1,
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "ImageView",
+                "id" : "download",
+                "enabled" : false,
+                "drawable" : "@drawable/btn_download",
+                "layout_width" : "32dp",
+                "layout_height" : "32dp",
+                "layout_gravity" : "center"
+            }
+            ]
+        },
+        {
+            "class" : "ScrollView",
+            "layout_width" : "match_parent",
+            "layout_weight" : 1,
+            "views" : [
+            {
+                "class" : "Label",
+                "id" : "lyric",
+                "font" : {
+                    "size" : "13dp"
+                },
+                "color" : "#fff",
+                "text" : "杨幂&冯绍峰 - 屋顶\n\n作词:周杰伦   作曲:周杰伦\n\n半夜睡不着觉 把心情哼成歌\n只好到屋顶找另一个梦境\n睡梦中被敲醒 我还是不确定\n怎会有动人旋律在对面的屋顶\n\n我悄悄关上门 带着希望上去\n原来是我梦里常出现的那个人\n那个人不就是我梦里那模糊的人\n我们有同样的默契\n用天线 排成爱你的形状\n\n在屋顶唱着你的歌(在屋顶和我爱的人)\n让星星点缀成最浪漫的夜晚\n拥抱这时刻 这一分一秒全都停止\n爱开始纠结\n\n在屋顶唱着你的歌(在屋顶和我爱的人)\n将泛黄的夜献给最孤独的月\n拥抱这时刻这一分一秒全都停止\n爱开始纠结 梦有你而美\n\n半夜睡不着觉 把心情哼成歌\n只好到屋顶找另一个梦境\n睡梦中被敲醒 我还是不确定\n怎会有动人旋律在对面的屋顶\n\n我悄悄关上门 带着希望上去\n原来是我梦里常出现的那个人\n那个人不就是我梦里那模糊的人\n我们有同样的默契\n用天线 排成爱你的形状\n\n在屋顶唱着你的歌(在屋顶和我爱的人)\n让星星点缀成最浪漫的夜晚\n拥抱这时刻 这一分一秒全都停止\n爱开始纠结\n\n在屋顶唱着你的歌(在屋顶和我爱的人)\n将泛黄的夜献给最孤独的月\n拥抱这时刻这一分一秒全都停止\n爱开始纠结 梦有你而美\n\n让我爱你是谁(是我～) 让你爱我是谁(是你～)\n怎会有动人旋律环绕在我俩的身边\n让我爱你是谁(是我～) 让你爱我是谁(是你～)\n原来是这屋顶有美丽的邂逅\n在屋顶唱着你的歌 在屋顶和我爱的人",
+                "layout_width" : "match_parent"
+            }
+            ]
+        },
+        {
+            "class" : "Label",
+            "id" : "time",
+            "text" : "04:32 | 04:34",
+            "color" : "#ddd",
+            "layout_gravity" : "right"
+        },
+        {
+            "class" : "LinearLayout",
+            "orientation" : "horizontal",
+            "layout_width" : "match_parent",
+            "layout_height" : "wrap_content",
+            "views" : [
+            {
+                "class" : "ImageView",
+                "id" : "nowplay_return",
+                "drawable" : "@drawable/btn_nowplay_return",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "View",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ImageView",
+                "id" : "nowplay_pre",
+                "drawable" : "@drawable/btn_nowplay_pre",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "View",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ImageView",
+                "id" : "nowplay_play",
+                "drawable" : "@drawable/btn_nowplay_play",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "View",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ImageView",
+                "id" : "nowplay_next",
+                "drawable" : "@drawable/btn_nowplay_next",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            },
+            {
+                "class" : "View",
+                "layout_height" : "match_parent",
+                "layout_weight" : 1
+            },
+            {
+                "class" : "ImageView",
+                "id" : "nowplay_list",
+                "drawable" : "@drawable/btn_nowplay_list",
+                "layout_width" : "40dp",
+                "layout_height" : "40dp",
+                "layout_gravity" : "center"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

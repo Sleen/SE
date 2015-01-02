@@ -1,0 +1,15 @@
+{
+    "select" : [
+    {
+        "enabled" : false,
+        "drawable" : "@drawable/white_rect_disabled"
+    },
+    {
+        "mouseDown" : true,
+        "drawable" : "@drawable/white_rect_pressed"
+    },
+    {
+        "drawable" : "@drawable/white_rect"
+    }
+    ]
+}

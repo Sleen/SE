@@ -1,0 +1,1 @@
+%ANDROID_SDK_ROOT%\tools\monitor
